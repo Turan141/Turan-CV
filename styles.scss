@@ -262,6 +262,9 @@ body {
 							font-size: 10px;
 							line-height: 10px;
 						}
+						.author_time {
+							margin-left: 10px;
+						}
 					}
 					.author_logo {
 						img {
@@ -299,6 +302,9 @@ body {
 							font-size: 10px;
 							line-height: 10px;
 						}
+						.author_time {
+							margin-left: 10px;
+						}
 					}
 					.author_logo {
 						img {
@@ -321,12 +327,14 @@ body {
 				background-color: #fff;
 				border-radius: 10px;
 				width: 90%;
+				.first_news_info {
+					display: none;
+				}
 				h2 {
 					padding: $grid-small-h2-padding;
 					font-size: 1.2rem;
 				}
 				p {
-					padding: 0.5rem 1rem;
 					font-size: 1rem;
 					font-family: "Montserrat";
 				}
@@ -990,6 +998,7 @@ body {
 							font-weight: 600;
 							font-size: 8px;
 							line-height: 10px;
+							margin-left: 5px;
 						}
 					}
 					.author_logo {

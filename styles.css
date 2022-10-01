@@ -237,6 +237,9 @@ body {
     font-size: 10px;
     line-height: 10px;
   }
+  #template1 .latest_news_blog .parentGrid .author_info_big_grid .author_data .author_time {
+    margin-left: 10px;
+  }
   #template1 .latest_news_blog .parentGrid .author_info_big_grid .author_logo img {
     height: 50px;
     width: 50px;
@@ -271,6 +274,9 @@ body {
     font-size: 10px;
     line-height: 10px;
   }
+  #template1 .latest_news_blog .parentGrid .author_info_small_grid .author_data .author_time {
+    margin-left: 10px;
+  }
   #template1 .latest_news_blog .parentGrid .author_info_small_grid .author_logo img {
     height: 50px;
     width: 50px;
@@ -290,12 +296,14 @@ body {
     border-radius: 10px;
     width: 90%;
   }
+  #template1 .latest_news_blog .div1 .first_news_info {
+    display: none;
+  }
   #template1 .latest_news_blog .div1 h2 {
     padding: 0 1rem;
     font-size: 1.2rem;
   }
   #template1 .latest_news_blog .div1 p {
-    padding: 0.5rem 1rem;
     font-size: 1rem;
     font-family: "Montserrat";
   }
@@ -879,6 +887,7 @@ body {
     font-weight: 600;
     font-size: 8px;
     line-height: 10px;
+    margin-left: 5px;
   }
   #template1 .latest_news_blog .parentGrid .author_info_small_grid .author_logo img {
     height: 45px;
