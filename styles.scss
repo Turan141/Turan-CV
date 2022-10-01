@@ -27,7 +27,23 @@ body {
 	color: #382828;
 	font-family: MullerRegular;
 	overflow-x: hidden;
+	transform: 0.5s ease;
 }
+
+.hide {
+	display: none;
+}
+
+#select {
+	padding: 10px 40px;
+	border: none;
+	margin-top: 10px;
+	outline: none;
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+		rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+		rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
 @media screen and (max-width: 767px) {
 	.adver_corner {
 		display: none;
@@ -53,8 +69,8 @@ body {
 
 	.hamburger_visible {
 		display: flex;
-		position: relative;
-		top: 0px;
+		position: absolute;
+		top: 50px;
 		transition: opacity 0.2s ease-out;
 		opacity: 1;
 		height: 350px;
@@ -320,6 +336,7 @@ body {
 				border-radius: 10px;
 				width: $grid-small-width;
 				height: $grid-small-height;
+				margin-top: 20px;
 				.small_grid_up {
 				}
 				h2 {
@@ -332,6 +349,8 @@ body {
 				border-radius: 10px;
 				width: $grid-small-width;
 				height: $grid-small-height;
+				margin-top: 20px;
+
 				h2 {
 					padding: $grid-small-h2-padding;
 					font-size: $grid-small-fontsize;
@@ -342,6 +361,8 @@ body {
 				border-radius: 10px;
 				width: $grid-small-width;
 				height: $grid-small-height;
+				margin-top: 20px;
+
 				h2 {
 					padding: $grid-small-h2-padding;
 					font-size: $grid-small-fontsize;
@@ -352,6 +373,8 @@ body {
 				border-radius: 10px;
 				width: $grid-small-width;
 				height: $grid-small-height;
+				margin-top: 20px;
+
 				h2 {
 					padding: $grid-small-h2-padding;
 					font-size: $grid-small-fontsize;
@@ -362,6 +385,8 @@ body {
 				border-radius: 10px;
 				width: $grid-small-width;
 				height: $grid-small-height;
+				margin-top: 20px;
+
 				h2 {
 					padding: $grid-small-h2-padding;
 					font-size: $grid-small-fontsize;
@@ -372,6 +397,8 @@ body {
 				border-radius: 10px;
 				width: $grid-small-width;
 				height: $grid-small-height;
+				margin-top: 20px;
+
 				h2 {
 					padding: $grid-small-h2-padding;
 					font-size: $grid-small-fontsize;
@@ -1220,7 +1247,7 @@ body {
 				}
 				.author_info_small_grid {
 					padding: 0 0.5rem;
-					height: 40px;
+					height: 36px;
 					.add_info {
 						display: flex;
 						align-items: center;
@@ -1247,6 +1274,7 @@ body {
 						.author_name {
 						}
 						.author_time {
+							margin-left: 5px;
 						}
 					}
 					.author_logo {

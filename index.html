@@ -39,7 +39,6 @@
 			<div class="navbar_main__right">
 				<div class="hamburger">
 					<img src="/assets/hamburger.svg" alt="menuicon" />
-					W
 				</div>
 				<div class="author">
 					<img src="/assets/author.svg" alt="author" />
@@ -77,7 +76,7 @@
 						<div class="div1">
 							<div>
 								<img
-									src="/assets/scale_1200 1.png"
+									src="/assets/scale_1200 1.svg"
 									alt=""
 								/>
 								<h2>
@@ -293,7 +292,7 @@
 						<div class="div6">
 							<div>
 								<img
-									src="/assets/scale_1200 1.png"
+									src="/assets/tilki-resimleri (356) 1.svg"
 									alt=""
 								/>
 								<h2>
@@ -336,7 +335,7 @@
 						<div class="div7">
 							<div>
 								<img
-									src="/assets/scale_1200 1.png"
+									src="/assets/Da4-GtPW0AA8KUM 1.svg"
 									alt=""
 								/>
 								<h2>
@@ -379,16 +378,25 @@
 					</div>
 				</div>
 			</div>
+			<div id="template2"></div>
 		</section>
 	</body>
 	<script>
 		const currentId = document.querySelector("#template1")
+		const getAllIds = document.querySelectorAll(
+			'*[id^="template"]'
+		)
 
 		const idInput = document.querySelector("#select")
 
 		const idHandler = (e) => {
-			currentId.id = e.target.value
+			getAllIds.forEach((element) => {
+				if (element.id === e.target.value) {
+					element.classList.remove("hide")
+				} else element.classList.add("hide")
+			})
 		}
+
 		idInput.addEventListener("change", idHandler)
 
 		const hamburgerIcon =

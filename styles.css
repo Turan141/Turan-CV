@@ -25,6 +25,19 @@ body {
   color: #382828;
   font-family: MullerRegular;
   overflow-x: hidden;
+  transform: 0.5s ease;
+}
+
+.hide {
+  display: none;
+}
+
+#select {
+  padding: 10px 40px;
+  border: none;
+  margin-top: 10px;
+  outline: none;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 @media screen and (max-width: 767px) {
@@ -49,8 +62,8 @@ body {
   }
   .hamburger_visible {
     display: flex;
-    position: relative;
-    top: 0px;
+    position: absolute;
+    top: 50px;
     transition: opacity 0.2s ease-out;
     opacity: 1;
     height: 350px;
@@ -291,6 +304,7 @@ body {
     border-radius: 10px;
     width: 90%;
     height: auto;
+    margin-top: 20px;
   }
   #template1 .latest_news_blog .div2 h2 {
     padding: 0 1rem;
@@ -301,6 +315,7 @@ body {
     border-radius: 10px;
     width: 90%;
     height: auto;
+    margin-top: 20px;
   }
   #template1 .latest_news_blog .div3 h2 {
     padding: 0 1rem;
@@ -311,6 +326,7 @@ body {
     border-radius: 10px;
     width: 90%;
     height: auto;
+    margin-top: 20px;
   }
   #template1 .latest_news_blog .div4 h2 {
     padding: 0 1rem;
@@ -321,6 +337,7 @@ body {
     border-radius: 10px;
     width: 90%;
     height: auto;
+    margin-top: 20px;
   }
   #template1 .latest_news_blog .div5 h2 {
     padding: 0 1rem;
@@ -331,6 +348,7 @@ body {
     border-radius: 10px;
     width: 90%;
     height: auto;
+    margin-top: 20px;
   }
   #template1 .latest_news_blog .div6 h2 {
     padding: 0 1rem;
@@ -341,6 +359,7 @@ body {
     border-radius: 10px;
     width: 90%;
     height: auto;
+    margin-top: 20px;
   }
   #template1 .latest_news_blog .div7 h2 {
     padding: 0 1rem;
@@ -487,7 +506,7 @@ body {
     border-radius: 20px;
   }
   .hamburger {
-    display: blocWWk;
+    display: block;
   }
   body {
     display: flex;
@@ -1076,7 +1095,7 @@ body {
   }
   #template1 .latest_news_blog .parentGrid .author_info_small_grid {
     padding: 0 0.5rem;
-    height: 40px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1100,6 +1119,9 @@ body {
     font-weight: 600;
     font-size: 8px;
     line-height: 10px;
+  }
+  #template1 .latest_news_blog .parentGrid .author_info_small_grid .author_data .author_time {
+    margin-left: 5px;
   }
   #template1 .latest_news_blog .parentGrid .author_info_small_grid .author_logo img {
     height: 45px;
