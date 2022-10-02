@@ -32,6 +32,7 @@ body {
 
 .hide {
 	display: none;
+	height: 0;
 }
 
 #select {
@@ -219,7 +220,7 @@ body {
 	.main_section {
 		margin: 40px 0;
 	}
-	#template1 {
+	#template2 {
 		.latest_news_blog {
 			display: flex;
 			justify-content: center;
@@ -234,8 +235,51 @@ body {
 				align-items: center;
 				gap: 20px;
 				flex-direction: column;
+				.main_title {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					img {
+						object-fit: cover;
+						overflow: hidden;
+						width: 100%;
+						// height: 55%;
+						padding: 1rem;
+						border-radius: 25px;
+					}
+					h2 {
+						padding: 1rem;
+						font-family: "Montserrat";
+						font-style: normal;
+						font-weight: 600;
+						// font-size: 14px;
+						// line-height: 17px;
+						color: #000000;
+					}
+					p {
+						padding: 0rem 2rem;
+					}
+				}
+				.small_grid_up {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					h2 {
+						padding: 1rem;
+						color: #000000;
+					}
+					img {
+						object-fit: cover;
+						overflow: hidden;
+						width: 100%;
+						padding: 1rem;
+						border-radius: 25px;
+					}
+				}
 				.author_info_big_grid {
-					padding: 0 0.5rem;
+					padding: 0 1rem;
 					margin-top: 5px;
 					height: 45px;
 					.add_info {
@@ -275,7 +319,7 @@ body {
 					}
 				}
 				.author_info_small_grid {
-					padding: 0 0.5rem;
+					padding-bottom: 1rem;
 					margin-top: 5px;
 					height: 45px;
 					.add_info {
@@ -296,7 +340,7 @@ body {
 						p {
 							font-size: 10px;
 							font-family: "Montserrat";
-							color: #808080;
+							color: #000000;
 							font-style: normal;
 							font-weight: 600;
 							font-size: 10px;
@@ -332,7 +376,7 @@ body {
 				}
 				h2 {
 					padding: $grid-small-h2-padding;
-					font-size: 1.2rem;
+					font-size: 1rem;
 				}
 				p {
 					font-size: 1rem;
@@ -575,7 +619,7 @@ body {
 		display: block;
 	}
 	//----------------------------------
-	$grid-small-h2-padding: 0 1rem;
+	$grid-small-h2-padding: 0.5rem 1rem;
 	$grid-small-p-padding: 0.5rem 1rem;
 	$grid-small-width: 10rem;
 	$grid-small-height: 15rem;
@@ -596,7 +640,7 @@ body {
 		margin: 40px 0;
 		width: 95vw;
 	}
-	#template1 {
+	#template2 {
 		.latest_news_blog {
 			display: flex;
 			justify-content: center;
@@ -704,7 +748,7 @@ body {
 
 				h2 {
 					padding: $grid-small-h2-padding;
-					font-size: 1.3rem;
+					font-size: 1rem;
 				}
 				p {
 					padding: 0.5rem 1rem;
@@ -826,6 +870,7 @@ body {
 		height: 0;
 		opacity: 0;
 		transition: opacity 0.1s ease-out;
+		display: none;
 	}
 
 	.hamburger_visible {
@@ -844,7 +889,7 @@ body {
 		height: 92px;
 		display: flex;
 		align-items: center;
-		background-color: #e6e6e6;
+		background-color: #fff;
 		font-size: 0.9rem;
 	}
 
@@ -926,7 +971,7 @@ body {
 	.main_section {
 		margin: 40px 0;
 	}
-	#template1 {
+	#template2 {
 		.latest_news_blog {
 			display: flex;
 			justify-content: center;
@@ -941,8 +986,47 @@ body {
 				// height: 650px;
 				gap: 1rem;
 				overflow: hidden;
+				.small_grid_up {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					h2 {
+						padding: 1rem;
+					}
+					img {
+						width: 90%;
+						border-radius: 15px;
+					}
+				}
+				.main_title {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					img {
+						object-fit: cover;
+						overflow: hidden;
+						width: 92%;
+						// height: 55%;
+						padding: 1rem;
+						border-radius: 25px;
+					}
+					h2 {
+						padding: 1rem 2rem;
+						font-family: "Montserrat";
+						font-style: normal;
+						font-weight: 600;
+						// font-size: 14px;
+						// line-height: 17px;
+						color: #000000;
+					}
+					p {
+						padding: 0rem 2rem;
+					}
+				}
 				.author_info_big_grid {
-					padding: 0 1rem;
+					padding: 1rem 0 1rem 2rem;
 					.add_info {
 						display: flex;
 						align-items: center;
@@ -959,22 +1043,23 @@ body {
 						p {
 							font-size: 12px;
 							font-family: "Montserrat";
-							color: #808080;
+							color: #000000;
 							font-style: normal;
 							font-weight: 600;
 							line-height: 10px;
 						}
 					}
 					.author_logo {
+						padding-right: 1rem;
 						img {
-							height: 60px;
-							width: 60px;
+							height: 25px;
+							width: 25px;
 							border-radius: 50%;
 						}
 					}
 				}
 				.author_info_small_grid {
-					padding: 0 0.5rem;
+					padding: 0 1rem;
 					height: 40px;
 					.add_info {
 						display: flex;
@@ -993,7 +1078,7 @@ body {
 						p {
 							font-size: 8px;
 							font-family: "Montserrat";
-							color: #808080;
+							color: #000000;
 							font-style: normal;
 							font-weight: 600;
 							font-size: 8px;
@@ -1003,19 +1088,11 @@ body {
 					}
 					.author_logo {
 						img {
-							height: 45px;
-							width: 45px;
+							height: 16px;
+							width: 16px;
 							border-radius: 50%;
 						}
 					}
-				}
-				img {
-					object-fit: cover;
-					overflow: hidden;
-					width: 100%;
-					height: 60%;
-					padding: 1rem;
-					border-radius: 35px;
 				}
 			}
 			.div1 {
@@ -1187,7 +1264,7 @@ body {
 	}
 	//-------------------------------------------
 
-	$grid-small-h2-padding: 0 1rem;
+	$grid-small-h2-padding: 0.7rem 1rem 0 1rem;
 	$grid-small-p-padding: 0.5rem 1rem;
 	$grid-small-width: 270px;
 	$grid-small-height: 245px;
@@ -1207,7 +1284,7 @@ body {
 	.main_section {
 		margin: 40px 0;
 	}
-	#template1 {
+	#template2 {
 		.latest_news_blog {
 			display: flex;
 			justify-content: center;
@@ -1219,11 +1296,54 @@ body {
 				display: grid;
 				grid-template-columns: repeat(5, 1fr);
 				width: 1350px;
-				// height: 650px;
 				gap: 1rem;
 				overflow: hidden;
+				.main_title {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					img {
+						object-fit: cover;
+						overflow: hidden;
+						width: 92%;
+						// height: 55%;
+						padding: 1rem;
+						border-radius: 25px;
+					}
+					h2 {
+						padding: 1rem 2rem;
+						font-family: "Montserrat";
+						font-style: normal;
+						font-weight: 600;
+						// font-size: 14px;
+						// line-height: 17px;
+						color: #000000;
+					}
+					p {
+						padding: 0rem 2rem;
+					}
+				}
+				.small_grid_up {
+					img {
+						object-fit: cover;
+						overflow: hidden;
+						width: 100%;
+						height: 60%;
+						padding: 1rem;
+						border-radius: 25px;
+					}
+				}
 				.author_info_big_grid {
 					padding: 0 1rem;
+					img {
+						object-fit: cover;
+						overflow: hidden;
+						width: 100%;
+						height: 60%;
+						padding: 1rem;
+						border-radius: 25px;
+					}
 					.add_info {
 						display: flex;
 						align-items: center;
@@ -1238,12 +1358,12 @@ body {
 						font-size: 16px;
 						font-family: "Montserrat";
 						p {
-							font-size: 12px;
 							font-family: "Montserrat";
-							color: #808080;
 							font-style: normal;
 							font-weight: 600;
+							font-size: 12px;
 							line-height: 10px;
+							color: #000000;
 						}
 					}
 					.author_logo {
@@ -1255,8 +1375,8 @@ body {
 					}
 				}
 				.author_info_small_grid {
-					padding: 0 0.5rem;
-					height: 36px;
+					padding: 0 0rem;
+					height: 10px;
 					.add_info {
 						display: flex;
 						align-items: center;
@@ -1271,14 +1391,21 @@ body {
 						justify-content: flex-start;
 						font-size: 8px;
 						font-family: "Montserrat";
+						img {
+							object-fit: cover;
+							overflow: hidden;
+							width: 100%;
+							height: 60%;
+							padding: 0.8rem;
+							border-radius: 25px;
+						}
 						p {
-							font-size: 8px;
 							font-family: "Montserrat";
-							color: #808080;
 							font-style: normal;
 							font-weight: 600;
 							font-size: 8px;
 							line-height: 10px;
+							color: #000000;
 						}
 						.author_name {
 						}
@@ -1293,14 +1420,6 @@ body {
 							border-radius: 50%;
 						}
 					}
-				}
-				img {
-					object-fit: cover;
-					overflow: hidden;
-					width: 100%;
-					height: 60%;
-					padding: 1rem;
-					border-radius: 35px;
 				}
 			}
 			.div1 {
