@@ -222,6 +222,10 @@ body {
   #template3 .latest_news_blog .parentGrid .small_grid_up h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   #template3 .latest_news_blog .parentGrid .small_grid_up img {
     -o-object-fit: cover;
@@ -353,6 +357,10 @@ body {
   #template3 .latest_news_blog .div1 h2 {
     padding: 0 1rem;
     font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   #template3 .latest_news_blog .div1 p {
     display: none;
@@ -956,9 +964,25 @@ body {
     border-top-right-radius: 10px;
     width: 100%;
   }
+  #template3 .latest_news_blog .parentGrid .first_news_info p {
+    padding: 0rem 1rem;
+    padding-top: 1rem;
+    font-family: "Montserrat";
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   #template3 .latest_news_blog .parentGrid .small_grid_up h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
   }
   #template3 .latest_news_blog .parentGrid .small_grid_up img {
     -o-object-fit: cover;
@@ -978,6 +1002,7 @@ body {
   #template3 .latest_news_blog .parentGrid .author_info_big_grid .add_info {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   #template3 .latest_news_blog .parentGrid .author_info_big_grid .menu_icon {
     font-family: "Montserrat";
@@ -1014,7 +1039,7 @@ body {
   }
   #template3 .latest_news_blog .parentGrid .author_info_small_grid {
     padding: 0 1rem;
-    height: 50px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1051,6 +1076,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 0;
   }
   #template3 .latest_news_blog .parentGrid .author_info_small_grid .author_data {
     display: flex;
@@ -1084,11 +1110,20 @@ body {
   }
   #template3 .latest_news_blog .div1 h2 {
     padding: 0 1rem;
+    padding-top: 0.5rem;
     font-size: 1.3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   #template3 .latest_news_blog .div1 p {
-    padding: 0.5rem 1rem;
+    padding: 0rem 1rem;
     font-family: "Montserrat";
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   #template3 .latest_news_blog .div2 {
     grid-area: 1/3/2/4;
@@ -1098,10 +1133,6 @@ body {
     width: 270px;
     height: 245px;
   }
-  #template3 .latest_news_blog .div2 h2 {
-    padding: 0 1rem;
-    font-size: 0.7rem;
-  }
   #template3 .latest_news_blog .div3 {
     grid-area: 1/4/2/5;
     background-color: #fff;
@@ -1109,10 +1140,6 @@ body {
     border-top-right-radius: 10px;
     width: 270px;
     height: 245px;
-  }
-  #template3 .latest_news_blog .div3 h2 {
-    padding: 0 1rem;
-    font-size: 0.7rem;
   }
   #template3 .latest_news_blog .div4 {
     grid-area: 1/5/2/6;
@@ -1122,10 +1149,6 @@ body {
     width: 270px;
     height: 245px;
   }
-  #template3 .latest_news_blog .div4 h2 {
-    padding: 0 1rem;
-    font-size: 0.7rem;
-  }
   #template3 .latest_news_blog .div5 {
     grid-area: 2/5/3/6;
     background-color: #fff;
@@ -1133,10 +1156,6 @@ body {
     border-top-right-radius: 10px;
     width: 270px;
     height: 245px;
-  }
-  #template3 .latest_news_blog .div5 h2 {
-    padding: 0 1rem;
-    font-size: 0.7rem;
   }
   #template3 .latest_news_blog .div6 {
     grid-area: 2/4/3/5;
@@ -1146,10 +1165,6 @@ body {
     width: 270px;
     height: 245px;
   }
-  #template3 .latest_news_blog .div6 h2 {
-    padding: 0 1rem;
-    font-size: 0.7rem;
-  }
   #template3 .latest_news_blog .div7 {
     grid-area: 2/3/3/4;
     background-color: #fff;
@@ -1157,10 +1172,6 @@ body {
     border-top-right-radius: 10px;
     width: 270px;
     height: 245px;
-  }
-  #template3 .latest_news_blog .div7 h2 {
-    padding: 0 1rem;
-    font-size: 0.7rem;
   }
 }
 @media screen and (min-width: 1500px) {
@@ -1260,9 +1271,25 @@ body {
     border-top-right-radius: 10px;
     width: 100%;
   }
+  #template3 .latest_news_blog .parentGrid .first_news_info p {
+    padding: 0rem 1rem;
+    padding-top: 1rem;
+    font-family: "Montserrat";
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   #template3 .latest_news_blog .parentGrid .small_grid_up h2 {
     font-family: "Montserrat", sans-serif;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font-weight: 700;
+    padding: 0rem 1rem;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
   }
   #template3 .latest_news_blog .parentGrid .small_grid_up img {
     -o-object-fit: cover;
@@ -1387,12 +1414,21 @@ body {
     border-top-right-radius: 10px;
   }
   #template3 .latest_news_blog .div1 h2 {
-    padding: 0.3rem 1rem;
+    padding: 0rem 1rem;
+    padding-top: 0.5rem;
     font-size: 1.3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   #template3 .latest_news_blog .div1 p {
-    padding: 0.5rem 1rem;
+    padding: 0rem 1rem;
     font-family: "Montserrat";
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   #template3 .latest_news_blog .div2 {
     grid-area: 1/3/2/4;
@@ -1402,10 +1438,6 @@ body {
     width: 270px;
     height: 245px;
   }
-  #template3 .latest_news_blog .div2 h2 {
-    padding: 0.3rem 1rem;
-    font-size: 0.7rem;
-  }
   #template3 .latest_news_blog .div3 {
     grid-area: 1/4/2/5;
     background-color: #fff;
@@ -1413,10 +1445,6 @@ body {
     border-top-right-radius: 10px;
     width: 270px;
     height: 245px;
-  }
-  #template3 .latest_news_blog .div3 h2 {
-    padding: 0.3rem 1rem;
-    font-size: 0.7rem;
   }
   #template3 .latest_news_blog .div4 {
     grid-area: 1/5/2/6;
@@ -1426,10 +1454,6 @@ body {
     width: 270px;
     height: 245px;
   }
-  #template3 .latest_news_blog .div4 h2 {
-    padding: 0.3rem 1rem;
-    font-size: 0.7rem;
-  }
   #template3 .latest_news_blog .div5 {
     grid-area: 2/5/3/6;
     background-color: #fff;
@@ -1437,10 +1461,6 @@ body {
     border-top-right-radius: 10px;
     width: 270px;
     height: 245px;
-  }
-  #template3 .latest_news_blog .div5 h2 {
-    padding: 0.3rem 1rem;
-    font-size: 0.7rem;
   }
   #template3 .latest_news_blog .div6 {
     grid-area: 2/4/3/5;
@@ -1450,10 +1470,6 @@ body {
     width: 270px;
     height: 245px;
   }
-  #template3 .latest_news_blog .div6 h2 {
-    padding: 0.3rem 1rem;
-    font-size: 0.7rem;
-  }
   #template3 .latest_news_blog .div7 {
     grid-area: 2/3/3/4;
     background-color: #fff;
@@ -1461,9 +1477,5 @@ body {
     border-top-right-radius: 10px;
     width: 270px;
     height: 245px;
-  }
-  #template3 .latest_news_blog .div7 h2 {
-    padding: 0.3rem 1rem;
-    font-size: 0.7rem;
   }
 }/*# sourceMappingURL=styles3.css.map */
