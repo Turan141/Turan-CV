@@ -281,7 +281,9 @@ body {
     border-radius: 50%;
   }
   #template3 .latest_news_blog .parentGrid .author_info_small_grid {
-    padding: 0 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
     height: 50px;
     display: flex;
     align-items: center;
@@ -993,7 +995,7 @@ body {
     border-top-right-radius: 10px;
   }
   #template3 .latest_news_blog .parentGrid .author_info_big_grid {
-    padding: 0.5rem 1rem 0.5rem;
+    padding: 2rem 0.5rem 0rem 0.5rem;
     height: 62px;
     display: flex;
     align-items: center;
@@ -1300,7 +1302,7 @@ body {
     border-top-right-radius: 10px;
   }
   #template3 .latest_news_blog .parentGrid .author_info_big_grid {
-    padding: 0.5rem 1rem 0.5rem;
+    padding: 2rem 0.5rem 0rem 0.5rem;
     height: 62px;
     display: flex;
     align-items: center;
